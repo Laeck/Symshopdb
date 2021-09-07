@@ -1,0 +1,14 @@
+
+# test:
+#   path: /test/{age<\d+>?0}
+#   controller: App\Controller\TestController::test
+#   methods : [GET]
+#   schemes : [https, http]
+  # host: localhost
+  # host: {subdomain}.monsite.com
+
+  # CONTRAINTES 
+  # defaults:
+  #   age: 0
+  # requirements : 
+  #   age: \d+
