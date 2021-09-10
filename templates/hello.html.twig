@@ -1,0 +1,63 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Salut {{ prenoms }} {% endblock %}
+
+    {% block body %}
+    <h1> Hello 
+        {{ prenoms }}
+    </h1>
+
+    {# <p> Vous avez 
+        {{ ages }} 
+        ans
+    </p> #}
+{# 
+    {% if ages >= 18 %}
+        vous êtes un adulte
+    {% endif %} #}
+
+    {# <ul>
+        {% for i in 1..10 %}
+            <li> numero {{ i }} </li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        {% for personne in prenom %}
+            <li> {{ personne | upper }} </li>
+        {% endfor %}
+    </ul> #}
+{# 
+    <p>Mon formateur s'appelle {{ formateur.prenom }} 
+    {{ formateur.nom }} 
+    et il a 
+    {{ formateur.age}} 
+    ans </p> #}
+
+
+    {# {% set formateur = formateur1 %}
+    {% include '_formateur.html.twig'%}
+    {% set formateur = formateur1 %}
+    {% include '_formateur.html.twig'%} #}
+{# OU ALORS  #}
+    {# {% include '_formateur.html.twig' with {"formateur" : formateur1} %}
+    {% include '_formateur.html.twig' with {"formateur" : formateur2} %} #}
+
+
+    {# EXERCICE #}
+{# 
+    <ul>
+        {% for age in ages %}
+            {% if age >= 18 %}
+                <li>
+                    adulte
+                </li>
+            {% else %}
+                <li> 
+                    Enfant
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul> #}
+
+{% endblock %}
